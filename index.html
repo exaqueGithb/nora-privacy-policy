@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="NORA Android 앱 개인정보처리방침">
+  <title>NORA 개인정보처리방침</title>
+  <style>
+    :root { --ink:#101010; --paper:#f7f7f5; --line:#d8d8d4; --muted:#646461; --panel:#fff; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans KR",sans-serif; line-height:1.75; }
+    main { max-width:880px; margin:0 auto; padding:64px 24px 96px; }
+    header { border-bottom:4px solid var(--ink); padding-bottom:30px; margin-bottom:42px; }
+    .brand { display:flex; align-items:center; gap:12px; font-weight:800; letter-spacing:.15em; font-size:14px; }
+    .mark { width:28px; height:28px; border:3px solid var(--ink); border-radius:50%; position:relative; }
+    .mark:after { content:""; width:3px; height:12px; background:var(--ink); position:absolute; left:10px; top:5px; border-radius:2px; }
+    h1 { font-size:clamp(34px,6vw,56px); letter-spacing:-.06em; line-height:1.1; margin:30px 0 16px; }
+    h2 { font-size:24px; letter-spacing:-.035em; margin:42px 0 14px; }
+    h3 { font-size:17px; margin:24px 0 7px; }
+    p, li { font-size:16px; }
+    .meta { color:var(--muted); font-size:14px; }
+    .notice { background:var(--ink); color:#fff; padding:22px 24px; border-radius:12px; margin:28px 0 36px; }
+    table { width:100%; border-collapse:collapse; background:var(--panel); border:1px solid var(--line); border-radius:12px; overflow:hidden; }
+    th, td { text-align:left; vertical-align:top; padding:16px; border-bottom:1px solid var(--line); }
+    th { width:30%; background:#efefec; font-weight:700; }
+    tr:last-child th, tr:last-child td { border-bottom:0; }
+    a { color:var(--ink); font-weight:700; text-underline-offset:3px; }
+    footer { margin-top:60px; padding-top:24px; border-top:1px solid var(--line); color:var(--muted); font-size:14px; }
+    @media (max-width:600px) { main{padding:40px 18px 72px} th,td{display:block;width:100%;border-bottom:0;padding:12px 14px} td{border-bottom:1px solid var(--line)} }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div class="brand"><span class="mark" aria-hidden="true"></span> NORA</div>
+      <h1>개인정보처리방침</h1>
+      <p class="meta">시행일: 2026년 8월 18일 · 적용 대상: NORA Android 앱 (패키지 ID: <code>com.jiwxn3.karaoke</code>)</p>
+    </header>
+
+    <section class="notice">
+      <strong>요약:</strong> NORA는 보컬 연습을 돕는 앱입니다. 마이크 신호는 기기 안에서 피치·리듬 분석에 사용되며, 원본 음성을 저장하거나 서버로 전송하지 않습니다. 점수·즐겨찾기·설정은 기본적으로 사용자의 기기에만 저장됩니다.
+    </section>
+
+    <section>
+      <h2>1. 적용 범위</h2>
+      <p>이 개인정보처리방침은 NORA Android 앱의 정보 처리 방식에 적용됩니다. NORA는 계정 생성이나 자체 클라우드 동기화를 요구하지 않으며, 광고를 제공하지 않습니다.</p>
+    </section>
+
+    <section>
+      <h2>2. 처리하는 정보와 목적</h2>
+      <table>
+        <thead><tr><th>정보 또는 권한</th><th>처리 목적과 방식</th></tr></thead>
+        <tbody>
+          <tr><th>마이크 신호</th><td>사용자가 Luna VoiceAssist의 발성 분석을 시작한 경우에만 현재 음정, 안정도, 리듬 규칙성을 기기 내에서 분석합니다. 원본 음성 녹음 파일을 저장하거나 NORA 서버로 전송하지 않습니다.</td></tr>
+          <tr><th>연습 기록·점수</th><td>곡 제목, 점수, 피치·타이밍·안정도 요약, 세션 모드와 집중 시간을 사용자의 기기 데이터베이스에 저장합니다. 사용자는 앱 설정에서 기록을 JSON으로 내보내거나 삭제할 수 있습니다.</td></tr>
+          <tr><th>즐겨찾기·설정</th><td>즐겨찾는 곡, 메트로놈·인이어 관련 설정, 앱 사용 흐름을 위해 기기에 저장합니다.</td></tr>
+          <tr><th>인터넷 연결</th><td>사용자가 요청한 경우 공개 YouTube 링크를 앱 안의 공식 임베디드 플레이어에서 재생하거나, 같은 Wi‑Fi의 사용자가 선택한 Windows 미러링 수신기와 연결하는 데 사용합니다.</td></tr>
+          <tr><th>Bluetooth·오디오 장치 정보</th><td>사용자가 인이어 모드를 사용할 때 연결된 Bluetooth 또는 유선 오디오 장치를 식별하고, 메트로놈 출력과 입력 장치 선택을 돕기 위해 기기 안에서 사용합니다.</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>3. 제3자 서비스</h2>
+      <p>NORA는 사용자가 제공한 공개 YouTube 링크를 YouTube의 공식 임베디드 플레이어로 표시할 수 있습니다. 이 기능을 사용하면 YouTube 및 Google이 해당 서비스의 정책에 따라 정보를 처리할 수 있습니다. NORA는 YouTube 영상·오디오를 다운로드, 추출 또는 자체 저장하지 않습니다. YouTube의 데이터 처리에 대해서는 <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google 개인정보처리방침</a>을 확인하세요.</p>
+      <p>선택적 Windows 미러링 기능은 사용자가 같은 Wi‑Fi에서 지정한 로컬 수신기와만 통신하도록 설계되어 있습니다. NORA는 이 연결을 위한 자체 원격 서버를 운영하지 않습니다.</p>
+    </section>
+
+    <section>
+      <h2>4. 정보 보관·내보내기·삭제</h2>
+      <p>로컬 연습 기록과 즐겨찾기는 사용자가 삭제할 때까지 기기에 보관됩니다. 사용자는 앱의 설정에서 데이터를 JSON 파일로 내보내거나, 모든 로컬 기록과 즐겨찾기를 삭제할 수 있습니다. 앱을 삭제하면 일반적으로 앱의 로컬 데이터도 운영체제 정책에 따라 삭제됩니다.</p>
+    </section>
+
+    <section>
+      <h2>5. 아동 및 연령</h2>
+      <p>NORA는 13세 이상 사용자를 대상으로 합니다. NORA는 13세 미만 아동을 대상으로 설계되지 않았으며, 의도적으로 아동의 개인정보를 수집하지 않습니다.</p>
+    </section>
+
+    <section>
+      <h2>6. 보안</h2>
+      <p>NORA는 원본 음성의 서버 전송을 하지 않고, 연습 기록을 기본적으로 로컬에 저장하여 데이터 노출을 줄이도록 설계되었습니다. 다만 사용자가 데이터를 내보내거나 외부 YouTube·Windows 기능을 사용하면 해당 파일·서비스·네트워크의 보안은 사용자의 환경과 해당 서비스 정책의 영향을 받을 수 있습니다.</p>
+    </section>
+
+    <section>
+      <h2>7. 문의 및 방침 변경</h2>
+      <p>개인정보처리방침 또는 NORA의 정보 처리에 관한 문의는 <a href="mailto:WeirdPaper@yahoo.com">WeirdPaper@yahoo.com</a>으로 보내 주세요. NORA의 기능 또는 관련 법령이 변경되면 이 페이지의 시행일과 내용을 업데이트할 수 있습니다.</p>
+    </section>
+
+    <footer>© 2026 NORA. 이 페이지는 NORA Android 앱의 공개 개인정보처리방침입니다.</footer>
+  </main>
+</body>
+</html>
